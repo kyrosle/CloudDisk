@@ -8,19 +8,12 @@ interface LayoutProps {
 }
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div className="layoutBody" style={{ height: '100vh' }}>
       <Navbar />
-      <div className="hero bg-base-200" style={{ height: "auto", width: "100vw" }}>
-        <div className="hero-content text-center">
-          <div className="artboard" style={{ width: "auto", height: "auto" }}>
-            {children}
-          </div>
-        </div>
-      </div >
-      <div style={{ left: '0', right: '0', position: 'absolute' }}>
-        <Footer />
+      <div className="artboard" style={{ width: "auto", height: "100%" }}>
+        {children}
       </div>
-    </div>
+      <Footer />
+    </div >
   )
-
 }

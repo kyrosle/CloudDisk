@@ -10,14 +10,14 @@ export default function Index() {
         <title>首页</title>
       </Head>
       <h1>
-        <div style={{ width: "95vw", height: "80vh" }}>
+        <div>
           <PathComp path='xxxxx' />
-          <div className="flex w-full" style={{ height: "78vh" }} >
-            <div className="bg-base-300 rounded-box place-items-center" style={{ width: "20vw" }}>
+          <div className="flex w-full"  >
+            <div className="bg-base-300 rounded-box place-items-center" style={{ height: '71vh', width: "20vw" }}>
               <MenuComp />
             </div>
             <div className="divider divider-horizontal" />
-            <div className="card bg-base-300 rounded-box" style={{ height: '78vh', width: '82vw' }}>
+            <div className="card bg-base-300 rounded-box" style={{ height: '71vh', width: '82vw' }}>
               <ExhibitionComp />
             </div>
           </div>
